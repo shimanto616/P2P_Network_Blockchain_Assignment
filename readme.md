@@ -2,7 +2,7 @@
 
 **CSE 433 — Blockchain & Distributed Security Lab**  
 *University of Asia Pacific*  
-**Author:** `<Your Name>` — `<Student ID>`
+**Author:** `Md.Seeman Islam Seemanto` — `22201095`
 
 Built with the **Python 3.9+ standard library only** (`socket`, `threading`, `json`, `struct`, `os`, `tkinter`). Zero third-party packages (`pip install -r requirements.txt` installs nothing).
 
@@ -65,21 +65,16 @@ sequenceDiagram
     Note over B,A: Stream resynchronizes — the next frame parses cleanly
 
 ## Project Structure
+```
 P2P_Network/
-
-├── main.py           # Tkinter GUI — thread-safe queue bridge, peers 
-
-list, file dialog
-    ├── p2p_node.py       # TCP server/client core, pool, handshake, 
-
-messaging, transfer engine
-    ├── protocol.py       # Framing, JSON codec, message builders, security 
-
-validators
-    ├── requirements.txt  # Standard library only — nothing to install
-    ├── README.md
-    ├── screenshots/      # Demonstration evidence
-    └── downloads/        # Received files (auto-created; gitignored)
+├── main.py           # Tkinter GUI — thread-safe queue bridge, peers list, file dialog
+├── p2p_node.py       # TCP server/client core, pool, handshake, messaging, transfer engine
+├── protocol.py       # Framing, JSON codec, message builders, security validators
+├── requirements.txt  # Standard library only — nothing to install
+├── README.md
+├── screenshots/      # Demonstration evidence
+└── downloads/        # Received files (auto-created; gitignored)
+```
 
 ## Setup
 >Install Python 3.9 or newer (python --version).
