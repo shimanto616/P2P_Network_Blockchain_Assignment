@@ -66,20 +66,27 @@ sequenceDiagram
 
 ## Project Structure
 P2P_Network/
-├── main.py           # Tkinter GUI — thread-safe queue bridge, peers list, file dialog
-├── p2p_node.py       # TCP server/client core, pool, handshake, messaging, transfer engine
-├── protocol.py       # Framing, JSON codec, message builders, security validators
-├── requirements.txt  # Standard library only — nothing to install
-├── README.md
-├── screenshots/      # Demonstration evidence
-└── downloads/        # Received files (auto-created; gitignored)
+
+├── main.py           # Tkinter GUI — thread-safe queue bridge, peers 
+
+list, file dialog
+    ├── p2p_node.py       # TCP server/client core, pool, handshake, 
+
+messaging, transfer engine
+    ├── protocol.py       # Framing, JSON codec, message builders, security 
+
+validators
+    ├── requirements.txt  # Standard library only — nothing to install
+    ├── README.md
+    ├── screenshots/      # Demonstration evidence
+    └── downloads/        # Received files (auto-created; gitignored)
 
 ## Setup
-~Install Python 3.9 or newer (python --version).
+>Install Python 3.9 or newer (python --version).
 
-~Clone this repository and open a terminal in the project folder.
+>Clone this repository and open a terminal in the project folder.
 
-~(First run on Windows may show a firewall prompt for Python; click Allow.)
+>(First run on Windows may show a firewall prompt for Python; click Allow.)
 
 ## Running
 ```
@@ -101,9 +108,13 @@ python protocol.py
 
 ## How to Connect Peers
 
-~Start a peer: Enter a Name and a free Port (e.g., 5000), then click Start Peer. The node listens on all interfaces (0.0.0.0).
-~Dial another peer: In any other window, enter the target IP (127.0.0.1 for local testing) and target port, then click Connect.
-~Handshake: The HELLO handshake runs ($\le$ 5 s). On success, both peers appear in each other's Connected Peers list.
+>Start a peer: Enter a Name and a free Port (e.g., 5000), then click Start Peer. The node listens on all interfaces (0.0.0.0).
+
+>Dial another peer: In any other window, enter the target IP (127.0.0.1 for local testing) and target port, then click Connect.
+
+>Handshake: The HELLO handshake runs ($\le$ 5 s). On success, both peers appear in each other's Connected Peers list.
 
 ## Licence
+```
 Academic project — submitted for CSE 433, University of Asia Pacific.
+```
