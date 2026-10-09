@@ -1,0 +1,27 @@
+# ==============================================================
+# CSE 433 - Blockchain & Distributed Security Lab
+# University of Asia Pacific
+# Project : P2P Network over TCP Sockets (Serverless, Multi-threaded)
+#
+# REQUIREMENTS
+# ------------
+# This project is implemented EXCLUSIVELY with the Python 3.9+
+# standard library. There are NO third-party dependencies.
+#
+# Standard-library modules used by this project:
+#   socket     -> TCP server/client sockets
+#   threading  -> one thread per peer connection
+#   json       -> message payload serialization (UTF-8)
+#   struct     -> 4-byte big-endian length-prefix framing ('>I')
+#   os         -> filesystem paths, binary file streaming, urandom
+#   sys        -> interpreter exit codes / runtime info
+#   time       -> timestamps for the UI event log
+#   queue      -> thread-safe queue bridging network threads -> GUI
+#   tkinter    -> GUI (tk, ttk, scrolledtext, filedialog, messagebox)
+#
+# Verify your environment before running:
+#   python --version        -> must print 3.9.0 or higher
+#
+# Intentionally left with no package entries:
+# running `pip install -r requirements.txt` installs nothing.
+# ==============================================================
